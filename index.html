@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <button id="sidepanelbtn">=</button>
+            <div class="center">
+                <a>HTML</a>
+                <a>CSS</a>
+                <a>JS</a>
+            </div>
+        </header>
+
+        <div id="sidepanel">
+            <button id="close">x</button>
+            <a href="#intro">- Estrutura básica</a>
+            <a href="#body">- Comandos dentro do body</a>
+            <a href="#head">- Comandos dentro do head</a>
+            <a href="#trabalhinho">- Faça seu site</a>
+        </div>
+
+        <section id="intro">
+            <h1>HTML</h1>
+            <p>
+                Html (HyperText Markup Language) é uma linguagem de marcação, 
+                é usada para estruturar o conteúdo visual de uma página.
+            </p>
+            <br>
+            <h2>Estrutura básica</h2>
+            <p>
+                A estrutura básica de um arquivo html são os comandos iniciais usados para sua página funcionar corretamente.
+            </p>
+            <img id="img1" src="intro.png">
+
+            <h3>&lt;!DOCTYPE html&gt;</h3>
+            <p>Este comando declara o tipo de arquivo, informa ao navegador que está usando a versão HTML5.</p>
+            
+            <h3>&lt;html&gt;</h3>
+            <p>O comando raiz de todo arquivo html, todo conteúdo estará dentro desse comando.</p>
+
+            <h3>&lt;head&gt;</h3>
+            <p>Contém todas as informações que não aparecem visualmente.</p>
+
+            <h3>&lt;meta charset="UTF-8"&gt;</h3>
+            <p>Define a codificação de caracteres (UTF-8 permite acentos e caracteres especiais corretamente).</p>
+
+            <h3>&lt;body&gt;</h3>
+            <p>Contém todo o conteúdo visível da página: textos, imagens, botões, links, etc.</p>
+            <br><br>
+
+            <h2>IMPORTANTE!</h2>
+            <p>Comandos que exigem texto fora dos "&lt;" "&gt;" devem ser finalizados com o mesmo comando, porém iniciando-se com "/".<br>
+            Todo comando deve ter "&lt;" e "&gt;".</p>
+        </section>
+
+        <section id="body">
+            <h2>Comandos dentro do &lt;body&gt;</h2>
+
+            <h3>h1 até h6</h3>
+            <p>São comandos para headings (títulos), o h1 é o maior e o h6 é o menor.</p>
+
+            <h3>img</h3>
+            <p>Comando para imagens, para botar uma imagem use "<bold>src="nomedaimagem.jpg"</bold>". Src também aceita links de imagem.</p>
+
+            <h3>p</h3>
+            <p>Comando para parágrafos de texto.</p>
+
+            <h3>a</h3>
+            <p>Comando para links, ao clicar você pode ser redirecionado para uma segunda página ou para uma seção da mesma página.
+                Para redirecionar use "href="link ou seção"" depois do comando a.<br><br>
+                Exemplo:<br>
+                &lt;a href="sites.com"&gt;palavra&lt;/a&gt;
+            </p>
+
+            <h3>li</h3>
+            <p>Comando para listas. Escreva cada item em comandos li separados.</p>
+
+            <h3>ul</h3>
+            <p>Agrupa os comandos li de forma não ordenada.
+                <br><br>
+                Exemplo:<br>
+                &lt;ul&gt;<br>
+                    &lt;li&gt;item&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </p>
+
+            <h3>ol</h3>
+            <p>Lista ordenada (numerada). Agrupa os comandos li.</p>
+
+            <h3>div</h3>
+            <p>Container, agrupa diversos elementos.</p>
+
+            <h3>span</h3>
+            <p>Pequeno container, utilizado para ajustar estilo de textos.</p>
+
+            <h3>button</h3>
+            <p>Botão clicável.</p>
+
+            <h3>input</h3>
+            <p>Campo de entrada de dados (texto, email, senha, etc).</p>
+
+            <h3>br</h3>
+            <p>Pula uma linha.</p>
+
+            <h3>hr</h3>
+            <p>Cria uma linha horizontal, usada pra separar conteúdos.</p>
+
+            <h3>video</h3>
+            <p>Exibe um video.</p>
+            
+            <h3>audio</h3>
+            <p>Toca um audio.</p>
+
+            <h3>section</h3>
+            <p>Funciona de forma parecida de um div, usado para agrupar seções de conteúdo.</p>
+
+            <h3>header</h3>
+            <p>Cabeçalho da página ou seção.</p>
+
+            <h3>footer</h3>
+            <p>Seção final de uma página.</p>
+
+            <h3>form</h3>
+            <p>Agrupa comandos input, serve como um formulário.</p>
+
+            <h3>table</h3>
+            <p>Cria uma tabela.</p>
+
+            <h3>tr</h3>
+            <p>Linha da tabela.</p>
+
+            <h3>td</h3>
+            <p>Célula de dado na tabela.</p>
+
+            <h3>th</h3>
+            <p>Cabeçalho de tabela.</p>
+
+            <h3>nav</h3>
+            <p>Menu de navegação, costuma abrigar comandos "a".</p>
+
+            <h3>strong</h3>
+            <p>Deixa o texto em negrito.</p>
+
+            <h3>em</h3>
+            <p>Deixa o texto em itálico.</p>
+
+            <h3>aside</h3>
+            <p>Conteúdo lateral.</p>
+        </section>
+
+        <section id="head">
+            <h2>Comandos dentro do &lt;head&gt;</h2>
+
+            <h3>style</h3>
+            <p>Permite adicionar css diretamente no html.</p>
+
+            <h3>script</h3>
+            <p>Insere ou conecta arquivos JavaScript</p>
+
+            <h3>link</h3>
+            <p>Usado para conectar arquivos externos, como CSS, ícones e fontes.</p>
+
+            <h3>title</h3>
+            <p>Define o título.</p>
+
+            <h3>meta</h3>
+            <p>Fornece informações (metadados) como codificação, descrição, autor, etc.</p>
+
+            <h3>base</h3>
+            <p>Mostra um aviso para usuários que têm o JavaScript desativado.</p>
+        </section>
+
+        <section id="trabalhinho">
+            <h2>Aplique seus conhecimentos</h2>
+            <p>Faça um site que anuncia uma casa nova:</p>
+
+            <li>Inicie com uma estrutura básica</li><br>
+
+            <li>Adicione um título usando o comando title</li><br>
+
+            <li>Adicione uma descrição usando o comando &lt;meta name="description" content="sua descrição"&gt;</li><br>
+
+            <li>Crie um header</li>
+
+            <li>Dentro do comando header, crie um h1 que diz "Casa"</li><br>
+
+            <li>Fora do header, crie um h2 que diz "Compre sua casa conosco!</li><br>
+
+            <li>Adicione uma imagem e use este link como src:<br> https://images.adsttc.com/media/images/5d34/e507/284d/d109/5600/0240/newsletter/_FI.jpg?1563747560</li><br>
+
+            <li>Crie um seção usando o comando section</li>
+
+            <li> Dentro do comando section adicione um texto usando o comando p dizendo "Nossas casas são lindas"</li>
+
+            <li>Adicione uma lista com os seguintes beneficios da casa: "Grande", "Com piscina" e "Vista bonita".</li>
+
+            <li>Mande seu código para soso verificar se está tudo certinho :3</li>
+        </section>
+
+        <script>
+            const toggleBtn = document.getElementById('sidepanelbtn');
+            const sidePanel = document.getElementById('sidepanel');
+            const closeBtn = document.getElementById('close');
+
+            toggleBtn.addEventListener('click', () => {
+                sidePanel.classList.toggle('active');
+            });
+            closeBtn.addEventListener('click', () => {
+                sidePanel.classList.remove('active');
+            });
+        </script>
+    </body>
+</html>

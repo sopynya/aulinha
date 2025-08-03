@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <button id="sidepanelbtn">=</button>
+            <div class="center">
+                <a>HTML</a>
+                <a>CSS</a>
+                <a>JS</a>
+            </div>
+        </header>
+
+        <div id="sidepanel">
+            <button id="close">x</button>
+            <a href="#intro">- Classes e ids</a>
+            <a href="#style">- Comandos dentro do body</a>
+            <a href="#trabalhinho">- Faça seu site</a>
+        </div>
+
+        <section id="intro">
+            <h1>CSS</h1>
+            <p>
+                CSS (Cascading Style Sheets) 
+                é uma linguagem utilizada para definir a apresentação visual de documentos HTML, 
+                omo páginas web. Em outras palavras, o CSS controla como os elementos de uma página são exibidos, 
+                incluindo cores, fontes, espaçamento e layout. 
+            </p>
+            <h2>Classes e ids</h2>
+            <p>
+                Dentro de um comando você pode nomea-lo usando " class="palavra" " ou " id="palavra" ".
+                Classes podem ser usadas em multiplos comandos, e os id podem ser usadas apenas em um comando.<br><br>
+                Exemplo:<br>
+                &lt;p class="palavrinha"&gt;Texto&lt;/&gt;<br>
+                &lt;p id="textinho"&gt;Texto&lt;/&gt;<br><br>
+                A palavra "textinho" não poderá ser usada de novo para outro id, porém a palavra "palavrinha" pode ser usada em outros class.
+            </p>
+
+            <h2>Aplicar seu css</h2>
+            <p>Para aplicar seu css no seu arquivo html basta usar o comando &lt;link rel="style" href="nomedoseuarquivo.css"&gt;</p>
+        </section>
+
+        <section id="style">
+            <h2>Comandos css</h2>
+            <h3>Cor e fundo</h3>
+            <p>
+                color: muda cor;<br>
+                background-color: cor de fundo;<br>
+                background-image: imagem de fundo;
+            </p>
+
+            <h3>Fonte</h3>
+            <p>
+                font-size:  tamanho das letras em pixels (px) ou tamanho padrão do navegador (em);<br>
+                font-family: tipo de fonte;<br>
+                font-weight: grossura da fonte, varia de 100 a 700;<br>
+                text-align: alinhamento do texto;<br>
+                text-decoration: decoração de texto ex:underline;<br>
+                text-transform: deixa o texto em maiúsculo ou minúsculo (uppercase, lowercase);
+            </p>
+
+            <h3>Tamanho e espaçamento</h3>
+            <p>
+                width: largura;<br>
+                height: altura;<br>
+                padding: espaçamento interno;<br>
+                margin: espaçamento externo;<br>
+                max-width: largura máxima;
+            </p>
+
+            <h3>Borda</h3>
+            <p>
+                border: define cor, tipo e expessura da borda;<br>
+                border-radius: arredontamento das bordas;<br>
+                outline: borda de fora;
+            </p>
+
+            <h3>Posicionamento</h3>
+            <p>
+                display: determina o tipo de display(block, flex, none);<br>
+                justify-content: alinha o conteudo horizontalmente caso o display seja flex; <br>
+                align-items: alinha o conteudo verticalmente caso o display seja flex; <br>
+                position: tipo de posição;<br>
+                (top, right, bottom ou left): coordenadas da posição;
+            </p>
+
+            <h3>Mouse</h3>
+            <p>
+                cursor: tipo de cursor;<br>
+                (comando, classe ou id):hover {seus comandos css} (muda ao passar o mouse por cima)
+            </p>
+
+            <h2>Exemplos de comandos css</h2>
+            <img src="exmeplo.png">
+
+        </section>
+
+    </body>
+</html>
